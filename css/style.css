@@ -8,18 +8,242 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
 *,::after,::before{
-    margin:0;
-    padding:0;
+margin:0;
+padding:0;
 }
 
 body {
-    font-size: 15px;
-    font-family: 'League Spartan';
+font-size: 15px;
+font-family: 'League Spartan';
+background-image: url('/images/bg-pattern-top-desktop.svg');
+background-repeat: no-repeat;
+
+}
+
+.container{
+display: flex;
+justify-content: center;
+min-height: 50vh;
+align-items: center;
+}
+
+.container header {
+display: flex;
+flex-direction: column;
+}
+
+h1 {
+margin-bottom: .5em;
+font-size: 3em;
+font-weight: 700;
+color:   hsl(300, 43%, 22%);
+line-height: .9em;
+}
+
+h1 + p {
+color: hsl(303, 10%, 53%);
+line-height: 1.5em;
+font-weight: 700;
+}
+
+ul {
+list-style-type: none;
+}
+
+.ratings {
+margin-left: 9em;
+}
+.ratings li {
+display: flex;
+margin-bottom: 1em;
+border:1px solid hsl(300, 24%, 96%);
+border-radius: 5px;
+background-color: hsl(300, 24%, 96%);
+}
+
+#reviews {
+padding:.8em 2em .8em .8em ;
+margin-right: 8em;
+}
+
+#report_guru {
+padding:.8em 0em .8em .8em ;
+margin-left: 4em;
+margin-right: 42px;
+
+}
+
+#besttech {
+padding:.8em 0 .8em .8em;
+margin-left: 6em;
+}
+
+.ratings p {
+color:hsl(300, 43%, 22%);
+font-weight: 700;
+}
+
+
+.fa-star {
+margin-left: .5em;
+color:#F5944D
+}
+.rated {
+margin-left: 1.3em;
+}
+
+
+/* USERS */
+
+.users {
+display: flex;
+justify-content: center;
+position: relative;
+bottom:5em;
+right:1em;
+}
+
+.users_ratings {
+display: flex;
+gap:2em;
+}
+
+.users_ratings li {
+border-radius: 10px;
+background-color: hsl(300, 43%, 22%);
+padding:1.5em 1.5em 0.5em 1.5em;
+}
+
+.users_name {
+color:hsl(300, 24%, 96%);
+font-size:14px;
+position: relative;
+bottom: 3em;
+left:4em;
+}
+
+#irene {
+position: relative;
+top:1em;
+}
+
+#anne {
+position: relative;
+top:2em;
+}
+
+.verify_buyer {
+color: hsl(333, 80%, 67%);
+margin-bottom:8em;
+}
+.users--photos {
+border-radius: 50%;
+height: 40px;
+margin-right: 1em;
+}
+
+.users__opinion {
+line-height: 1.5em;
+color:hsl(300, 24%, 96%);
+position: relative;
+bottom:1.5em;
 }
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+font-size: 11px;
+text-align: center;
+}
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and  (max-width:992px)
+{
+
+body {
+background-image: url('/images/bg-pattern-top-mobile.svg');
+background-repeat: no-repeat;
+}
+.container {
+display: flex;
+flex-direction: column;
+text-align:center;
+padding-inline:1em;
+
+} 
+.container header {
+margin-top: 4em;
+}
+.container h1 + p {
+margin-bottom: 1.5em;
+}
+
+.ratings {
+display: flex;
+flex-direction: column;
+margin-left: 0;
+width: 100%; 
+}
+
+#reviews {
+display: block;
+margin-right: 0;
+margin-left:0;
+}
+
+#report_guru {
+display: block;
+margin-right: 0;
+margin-left:0;
+padding-right: 2em;
+}
+
+#besttech {
+display: block;
+margin-left:0;
+padding-right: 2em;
+}
+
+#besttech .rated {
+margin-left:0;
+}
+
+.fa-star {
+margin-bottom: .8em;
+}
+
+.users {
+position: relative;
+top:3em;
+padding-inline: 1em;
+right:0;
+overflow-x: hidden;
+}
+
+.users_ratings {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+#colton {
+padding-top: 2em;
+padding-bottom: 0.1em;
+}
+
+
+#irene {
+padding-top: 2em;
+padding-bottom: 0.1em;
+}
+
+
+#anne {
+padding-top: 2em;
+padding-bottom: 0.1em;
+margin-bottom: 8em;
+}
+}
+
+/* END OF MEDIA QUERIES  */
