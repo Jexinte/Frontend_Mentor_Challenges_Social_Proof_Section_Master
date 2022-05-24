@@ -1,0 +1,25 @@
+/* League Spartan Regular 400 */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+/* League Spartan Medium 500 */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+
+/* League Spartan Bold 700 */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+*,::after,::before{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'League Spartan';
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
